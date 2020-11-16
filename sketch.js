@@ -115,7 +115,8 @@ function mouseReleased(){
 
 function keyPressed(){
   if(keyCode === 32){
-  
+  	
+    Matter.Body.setPosition(stone.body , {x:100 , y:500});
     sling.attach(stone.body);
      
 }
